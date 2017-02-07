@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>My First JavaScript</h1>
+
+
+<!--getElementById()-->
+<button type="button"
+        onclick="document.getElementById('demo').innerHTML = Date()">
+    Click me to display Date and Time.
+</button>
+<p id="demo"></p>
+<!--/getElementById()-->
+
+<!--getElementById()-->
+<button type="button" onclick="document.getElementById('demo2').innerHTML='hello'">click me</button>
+<p id="demo2"></p>
+<!--/getElementById()-->
+
+
+<!--set a default pic and change it by buttons -->
+<h1>What Can JavaScript Do?</h1>
+
+<p>JavaScript can change HTML attributes.</p>
+
+<p>In this case JavaScript changes the src (source) attribute of an image.</p>
+
+<button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
+
+<img id="myImage" src="pic_bulboff.gif" style="width:100px">
+
+<button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
+<!---->
+<br>
+<br>
+<br>
+<!--change font-->
+
+<button onclick="document.getElementById('demo3').style.fontSize = '25px'";>click me to change font</button>
+<p id="demo3">hello there. look at my font</p>
+<!--/change font-->
+
+<!--hide text-->
+<button onclick="document.getElementById('demo4').style.display = 'none'";>click me to hide</button>
+<p id="demo4">look at me</p>
+<!--/hidetext-->
+
+<!--hide blocks-->
+<button onclick="document.getElementById('demo5').style.display = 'none'";>click me to hide</button>
+<div id="demo5"><label>hello there</label><a href="#">I'm gonna disapear</a></div>
+<!--/hide blocks-->
+
+
+</body>
+
+</html>
